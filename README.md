@@ -1,6 +1,9 @@
-# Jedidiah-Solomon.github.io
+# Jedidiah-Solomon Web Designs and codes
 
 
 
 ### To access any of my sites use  https://jedidiah-solomon.github.io/
-<a href="https://jedidiah-solomon.github.io/ALX-INSPIRED-WEBSITE/" target="_blank">Black Portfolio Site</a>
+<ol>
+  <li><a href="https://jedidiah-solomon.github.io/ALX-INSPIRED-WEBSITE/" target="_blank">Black Portfolio Site</a></li>
+   <li><a href="https://jedidiah-solomon.github.io/JedybrownFolio/" target="_blank">Personal Portfolio Site</a></li>
+</ol>
