@@ -54,24 +54,29 @@
 <body>
 
 <div class="bgimg">
+
   <div class="topleft">
     <p>Jedidiah Solomon - Front-end Developer</p>
   </div>
+
   <div class="middle">
     <h1>2023 ENDS</h1>
     <hr>
     <p id="demo" style="font-size:30px"></p>
     <p>Give me a chat and I will give you a world class design</p>
   </div>
+
   <div class="bottomleft">
-    <p>Software Engineer - ALX <br/> <span class="my-readme">Checkout my README.md</span>
+    <p>Software Engineer - ALX <br/> 
+      <span class="my-readme">Checkout my README.md</span>
     </p>
   </div>
+
 </div>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+var countDownDate = new Date("Jan 1, 2024 00:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
@@ -79,7 +84,7 @@ var countdownfunction = setInterval(function() {
   // Get todays date and time
   var now = new Date().getTime();
   
-  // Find the distance between now an the count down date
+  // Find the distance between now and the count down date
   var distance = countDownDate - now;
   
   // Time calculations for days, hours, minutes and seconds
@@ -95,7 +100,7 @@ var countdownfunction = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "2023 has ended. Thanks for your patronage";
   }
 }, 1000);
 </script>
