@@ -6,7 +6,7 @@
 <ol>
   <li><a href="https://jedidiah-solomon.github.io/ALX-INSPIRED-WEBSITE/" target="_blank">Black Portfolio Site</a></li>
    <li><a href="https://jedidiah-solomon.github.io/JedybrownFolio/" target="_blank">Personal Portfolio Site</a></li>
-   <li><a href="https://jedidiah-solomon.github.io/Jedysco-BMI-Calculator" target="_blank">
+   <li><a href="https://jedidiah-solomon.github.io/Jedysco-BMI-Calculator/index.html" target="_blank">
         CHECK BODY MASS INDEX
       </a></li>
 </ol>
