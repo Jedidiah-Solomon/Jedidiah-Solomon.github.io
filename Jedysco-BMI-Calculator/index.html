@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>JEDYSCO BODY MASS INDEX (BMI) CALCULATOR</h1>
+    </header>
+
+    <div class="container"><!--Container starts-->
+      <div class="grid"><!--Grid startss-->
+
+        <div class="box box1"><!--box1 starts-->
+          <label for="height">Height (in meters):</label><br>
+          <input type="number" step="0.01" id="height" class="bmi-input bmi-input1" placeholder="Enter your height in meters">
+          <br><br>
+          <label for="weight">Weight (in kilograms):</label><br>
+          <input type="number" id="weight" class="bmi-input bmi-input2" placeholder="Enter your weight in kilograms">
+          <br><br>
+          <button onclick="calculateBMI()" class="bmi-button">Calculate BMI</button>
+          <br><br>
+          <div class="result-unit">Your BMI is <span id="result" class="bmi-result">0.00</span> kg/m<sup>2</sup></div>
+          <div class="status">Status: <span id="doctor"></span></div>
+        </div><!--box1 ends-->
+
+
+        <div class="box box2"><!--box2 starts-->
+          <p>Body Mass Index (BMI)</p>
+
+          <blockquote cite="https://www.cdc.gov/healthyweight/assessing/bmi/index.html">
+            Body Mass Index (BMI) is a person&#39;s weight in kilograms (or pounds) divided by the square
+            of height in meters (or feet). A high BMI can indicate high body fatness. BMI screens for
+            weight categories that may lead to health problems, but it does not diagnose the body
+            fatness or health of an individual.
+          </blockquote>
+          <p>How is BMI interpreted for adults?<br>
+            For adults 20 years old and older, BMI is interpreted using standard weight status categories. 
+            These categories are the same for men and women of all body types and ages.</p>
+          <h2>The standard weight status categories associated with BMI ranges for adults are shown in the 
+              following table.
+          </h2>
+          <table>
+            <tr>
+              <th>BMI</th>
+              <th>Weight Status</th>
+            </tr>
+            <tr>
+              <td>Below 18.5</td>
+              <td>Underweight</td>
+            </tr>
+            <tr>
+              <td>18.5 &#8211; 24.9</td>
+              <td>Healthy Weight</td>
+            </tr>
+            <tr>
+              <td>25.0 &#8211; 29.9</td>
+              <td>Overweight</td>
+            </tr>
+            <tr>
+              <td>30.0 and Above</td>
+              <td>Obesity</td>
+            </tr>
+          </table>
+
+          <h2>What are the health consequences of obesity for adults?</h2>
+          <p>
+            People who have obesity are at increased risk for many diseases and health conditions, 
+            including the following:<br>
+            
+            1. All-causes of death (mortality)<br>
+            2. High blood pressure (hypertension)<br>
+            3. High LDL cholesterol, low HDL cholesterol, or high levels of triglycerides (dyslipidemia)<br>
+            4. Type 2 diabetes<br>
+            5. Coronary heart disease<br>
+            6. Stroke<br>
+            6. Gallbladder disease<br>
+            7. Osteoarthritis (a breakdown of cartilage and bone within a joint)<br>
+            8. Sleep apnea and breathing problems<br>
+            9. Chronic inflammation and increased oxidative stress<br>
+            10. Some cancers (endometrial, breast, colon, kidney, gallbladder, and liver)<br>
+            11. Low quality of life<br>
+            12. Mental illness such as clinical depression, anxiety, and other mental disorders<br>
+            13. Body pain and difficulty with physical functioning.<br>
+          </p>
+          <h2>Is BMI interpreted the same way for children and teens as it is for adults?</h2>
+          <p>
+            BMI is interpreted differently for children and teens, even though it is calculated using the same
+             formula as adult BMI. Children and teen’s BMI need to be age and sex-specific because 
+            the amount of body fat changes with age and the amount of body fat differs between girls and boys.
+          </p>
+          <h2>How to calculate BMI</h2>
+          <p>Formula: weight (kg) / [height (m)]<sup>2</sup>
+
+            With the metric system, the formula for BMI is weight in kilograms divided by
+            height in meters squared. Because height is commonly measured in centimeters,
+             divide height in centimeters by 100 to obtain height in meters.<br><br>
+            
+            Example: Weight = 68 kg, Height = 165 cm (1.65 m)<br>
+            Calculation: 68 ÷ (1.65)<sup>2</sup> = 24.98kg/m<sup>2</sup><br><br>
+            
+            Or with the old system:<br>
+            Pounds and inches<br>
+            Formula: weight (lb) / [height (in)]<sup>2</sup> x 703</p>
+            <br><br>
+            <p>&copy;Jedidah Solomon 2023</p>
+         
+            
+
+
+        </div><!--box2 ends-->
+
+
+      </div> <!--Grid ends-->
+    </div><!--Container ends-->
+        
+
+
+    <script type="text/javascript" src="bmi-calculator.js"></script>
+  </body>
+</html>
+
+
+
+
+
+  
+
