@@ -172,17 +172,27 @@ tr:nth-child(even) {
 
 /* Media Queries */
 
-@media screen and (max-width: 576px) {
-  .box1 {
-    height: 700px;
-    
+@media screen and (max-width: 940px) {
+
+  .grid {
+    display: block;
+
   }
-  .bmi-button {
-    width: 80%;
-    
+  .box1 {
+    height: 540px;
+    margin: auto;
+    width: 96%;
+    text-align: center;  
   }
 
-  .result-unit, .status {
-    width: 80%;
+  div.result-unit, div.status {
+    width: 60%;
+    margin: 16px auto;
   }
+
+.box2 {
+    width: 96%;
+    margin: auto;
+  }
+
 }
