@@ -73,6 +73,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    opacity: 0.4;
+}
+
 .btn-yellow {
     background: $button-color-1;
     color: #fff;
