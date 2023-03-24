@@ -63,6 +63,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  opacity: 0.4;
+}
+
 .btn-yellow {
   background: rgb(245, 146, 62);
   color: #fff;
