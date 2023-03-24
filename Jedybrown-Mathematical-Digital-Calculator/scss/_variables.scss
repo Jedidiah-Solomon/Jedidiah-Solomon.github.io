@@ -1,0 +1,22 @@
+//---------Local Variables-------Project variables--------//
+$primary-bg-color: #efeff2;
+$primary-font: 30px;
+$primary-color: #000000;
+$alpha-level: 0.3;
+$main-color: #22252D;
+$button-color-1: rgb(245, 146, 62);
+$button-color-2: rgb(224, 224, 224);
+
+
+
+
+
+
+
+
+// Create Mixin
+@mixin important-text {
+    color: rgb(173, 14, 93);
+    font-size: 28px ;
+    font-weight: bold;
+  }

@@ -1,0 +1,102 @@
+//--------------Import SASS Functions
+@import "variables", "functions";
+
+//----------Root and Body Styles-----------//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: $primary-bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*h1 {
+    text-align: center;
+    font-size: $primary-font;
+    margin-top: sizeDoubler(4px);
+}*/
+
+
+/* Use mixin sample
+.beautiful-text {
+    @include important-text;
+    text-transform: uppercase;
+} */
+
+.calculator {
+    width: 300px;
+    height: 550px;
+    box-shadow: 4px 4px 30px rgba($primary-color, $alpha-level);
+    border-radius: sizeDoubler(6px);
+    background: $main-color;
+    overflow: hidden;
+
+}
+
+form input {
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-radius: sizeDoubler(6px);
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: $primary-color;
+    text-align: right;
+    pointer-events: none;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;  
+}
+
+
+
+button {
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid $primary-color;
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-yellow {
+    background: $button-color-1;
+    color: #fff;
+}
+
+
+.btn-grey {
+    background: $button-color-2;
+    color: $primary-color;
+}
+
+.btn-equal {
+    background: green;
+}
+
+.btn-clear {
+    background: red;
+}
+
+.btn-toggler {
+    background: $primary-color;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+  

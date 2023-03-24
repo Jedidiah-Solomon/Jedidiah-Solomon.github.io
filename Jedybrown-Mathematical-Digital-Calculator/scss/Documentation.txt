@@ -1,0 +1,68 @@
+1. data-num is a custom data attribute in HTML that allows you to store extra information 
+on an element that is not tied to its core functionality.
+
+In this case, data-num is used to store the numerical value or operator that 
+corresponds to each button. It's then used in the JavaScript code to get the value of the button 
+that was clicked, and add it to the value on the calculator screen.
+
+For example, the following HTML button:
+<button type="button" class="btn btn-yellow" data-num="*">*</button>
+
+Has a data-num attribute with a value of *, which corresponds to the multiplication operator.
+ In the JavaScript code, when this button is clicked, the value of * is
+ retrieved from the data-num attribute and added to the calculator screen.
+
+ 2.(function(){
+This line starts an immediately invoked function expression (IIFE). An IIFE is a function that is executed as soon as it's defined. It's used here to create a new scope for our code so that 
+variables defined inside the IIFE don't conflict with variables defined outside it.
+
+    let screen = document.querySelector('.screen');
+This line uses the document.querySelector() method to find the element in the HTML with a class of screen. 
+It assigns this element to the variable screen.
+
+    let buttons = document.querySelectorAll('.btn');
+This line uses the document.querySelectorAll() method to find all the elements in the HTML with a class of btn.
+ It assigns these elements to the variable buttons.
+
+     let clear = document.querySelector('.btn-clear');
+    let equal = document.querySelector('.btn-equal');
+These lines use the document.querySelector() method to find the elements in the HTML with classes of btn-clear and btn-equal, respectively. They assign these elements to the variables clear and equal.
+
+
+    buttons.forEach(function(button) {
+        button.addEventListerner('click', function(e) {
+            let value = e.target.dataset.num;
+            screen.value +=value;
+        }) 
+    })
+This code adds a click event listener to each element in the buttons array. When a button is clicked, it gets the value of the data-num attribute from the clicked button using e.target.dataset.num.
+ It then appends this value to the value property of the screen element using screen.value += value;.
+
+     equal.addEventListerner('click', function(e) {
+        if(screen.value === '') {
+            screen.value = " ";
+        }
+        else {
+            let answer =eval(screen.value);
+            screen.value = answer;
+        }
+    } )
+
+This code adds a click event listener to the equal element. When the equal button is clicked, 
+it checks if the screen element's value is empty. If it is, it sets the screen element's value to a single space character. If it's not empty, it evaluates the value of the screen 
+element using the eval() function, and sets the screen element's value to the result of the evaluation.
+
+    clear.addEventListener('click', function(e) {
+        screen.value = " ";
+    })
+This code adds a click event listener to the clear element. 
+When the clear button is clicked, it sets the screen element's value to a single space character.
+
+
+
+})();
+This line closes the IIFE started at the beginning of the code. It executes the function immediately.
+
+
+
+
