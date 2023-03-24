@@ -9,4 +9,8 @@
    <li><a href="https://jedidiah-solomon.github.io/Jedysco-BMI-Calculator/index.html" target="_blank">
         CHECK BODY MASS INDEX
       </a></li>
+
+       <li><a href="https://jedidiah-solomon.github.io/Jedybrown-Mathematical-Digital-Calculator/index.html" target="_blank">
+        Digital CALCULATOR
+      </a></li>
 </ol>
