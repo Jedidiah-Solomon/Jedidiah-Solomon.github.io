@@ -64,5 +64,32 @@ When the clear button is clicked, it sets the screen element's value to a single
 This line closes the IIFE started at the beginning of the code. It executes the function immediately.
 
 
+======================================================
+This is a JavaScript code for a calculator with some additional functionalities like square root, square, sin, cos, and tan operations.
+ Here's a breakdown of what the code is doing:
 
+The first line (function(){})() is an Immediately Invoked Function Expression (IIFE). This is a function that is defined and executed 
+immediately, without being saved to a variable or named. The purpose of this is to create a local scope for the variables defined inside
+ the function so that they don't conflict with any other variables with the same name in the global scope.
+
+The code initializes some variables, including a reference to the calculator's screen, all the calculator's buttons, and the specific
+ buttons for clearing the screen, evaluating the expression, and performing the square root, square, sin, cos, and tan operations.
+
+The code uses a forEach loop to attach a click event listener to each of the calculator's buttons. When a button is clicked, the value 
+of the button (which is stored in the data-num attribute of the button) is appended to the calculator's screen.
+
+The code attaches a click event listener to the equal button. When this button is clicked, the code evaluates the expression on the 
+screen using the eval() function. Before evaluating the expression, the code checks for any special operations such as square root, square, sin, cos, and tan. If any of these operations are detected, the code uses the corresponding JavaScript functions to perform the operation on the input value. If the input is invalid, an error message is displayed.
+
+The code attaches click event listeners to the clear button and the special operation buttons. When the clear button is clicked, 
+the screen is cleared. When a special operation button is clicked, the corresponding symbol is appended to the screen.
+
+Overall, this code creates a functional calculator that can perform basic arithmetic operations as well as some 
+additional mathematical operations.
+
+
+
+
+If the input field contains only one of the special functions sqrt, ^2, sin, cos, or tan, then the relevant calculation is performed using the corresponding JavaScript Math function. Otherwise, the eval() function is used to evaluate the entire input expression and compute the result.
+ If the result is not a valid number (e.g. if the user entered an invalid expression), then the input field is set to "Invalid Input".
 

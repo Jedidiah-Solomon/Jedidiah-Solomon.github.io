@@ -10,6 +10,7 @@
     let cos = document.querySelector('.btn-cos');
     let tan = document.querySelector('.btn-tan');
 
+    //Add Event Listener to all numeric and operator buttons
     buttons.forEach(function(button) {
         button.addEventListener('click', function(e) {
             let value = e.target.dataset.num;
@@ -17,6 +18,7 @@
         }) 
     });
 
+    //Add Event Listeners to Equal to button
     equal.addEventListener('click', function(e) {
         if(screen.value === '') {
             screen.value = " ";
