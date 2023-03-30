@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="Mname" name="Mname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="Sname" name="Sname" value="Doe"><br><br>  
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd">
+    </form>
+    <br><br>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset Form">
+    </form>
+    <br><br>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+    <br><br>
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+    </form>
+    <br><br>
+    
+
+    
+
+
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="4">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    </select>
+    <br><br>
+
+
+
+    <label for="motors">Choose a Multiple car (Ctrl+Arrow key):</label>
+    <select id="motors" name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    </select>
+    <br><br>
+
+
+    <textarea name="message" style="width:200px; height:200px;">
+    The cat was playing in the garden.
+    </textarea>
+
+
+    <form action="/action_page.php">
+    <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Work:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="Fname" name="Fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="Lname" name="Lname" value="Doe"><br><br>
+    </fieldset>
+    <input type="submit" value="Submit">
+    </form>
+    <br><br>
+
+
+    <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="userRange" value="70">
+    100 +
+    <input type="number" id="b" name="userNumber" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+    </form>
+    <br><br>
+
+
+
+<p>
+    The variables a and b refer to the input values entered by the user in the range slider and text 
+    input field, respectively.
+
+In the line x.value=parseInt(a.value)+parseInt(b.value), a.value and b.value are used to get the values
+ entered by the user in the input fields with id="a" and id="b".
+
+The parseInt() function is used to convert these values from strings to integers, so they can be added together using the + operator.
+
+Finally, the result of this calculation is assigned to the value property of the output field with 
+name="x", which is displayed on the webpage.
+The output element in HTML is used to display the result of a calculation, typically performed by 
+    JavaScript, on a webpage.
+
+In this particular code, the output element has two attributes: name and for.
+
+The name attribute is used to give a unique name to the output element, which can be used to refer 
+    to it in JavaScript or on the server side. In this case, the name given is "x".
+
+The for attribute is used to specify which input fields the output element is associated with.
+     This is typically done by setting the for attribute to the id attribute of the input field. 
+     In this code, the for attribute is set to "a b", which means that the 
+    output element is associated with the input fields with id="a" and id="b". This association 
+        allows the oninput attribute of the form element to update the output element with the
+             result of the calculation performed by the JavaScript function.
+</p>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+Thanks to James Q Quick who assisted me.  https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF
+To learn more on Vs Code for HTML and CSS usin EMMET documentation.
+Examples:
+(A) .container gives <div class="container"></div>
+(B) #home.flex-center.flex-column gives  <div id="home" class="flex-center flex-column"></div>
+(C) a.btn gives  <a href="" class="btn"></a>
+
+
+How to write some questions
+1. Fractions
+ {
+        question: "What is the unit of Speed?",
+        choice1: "Capacitance",
+        choice2: "<sup>1</sup>/<sub>6</sub>",
+        choice3: "&frac34;",
+        choice4: "m/s<sup>2</sup>",
+        answer: 4,
+    },
+        
+
+
