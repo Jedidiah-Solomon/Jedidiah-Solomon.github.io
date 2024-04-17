@@ -9,4 +9,5 @@
    <li><a href="https://jedidiah-solomon.github.io/JedybrownFolio/" target="_blank">Personal Portfolio Site</a></li>
    <li><a href="https://jedidiah-solomon.github.io/Jedysco-BMI-Calculator/index.html" target="_blank">CHECK BODY MASS INDEX</a></li>
   <li><a href="https://jedidiah-solomon.github.io/Jedybrown-Mathematical-Digital-Calculator/index.html" target="_blank">Digital CALCULATOR.<a></li>
+  <li><a href="https://codepen.io/Jedybrown/pen/MWRqZeW" target="_blank">Apartments Shop with Map Locator - Leaflet js & OpenStreetMap<a></li>
 </ol>
